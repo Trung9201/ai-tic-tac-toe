@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: "Permanent Marker", cursive;
+}
+
+.container h1{
+    font-size: 48px;
+    margin: 50px;
+}
+
+.cellContainer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, auto);
+}
+
+.cell {
+    width: 90px;
+    height: 90px;
+    border: 2px solid #000;
+    font-size: 80px;
+    line-height:75px;
+    cursor: pointer;
+}
+
+.cell:nth-child(1),
+.cell:nth-child(2),
+.cell:nth-child(3) {
+    border-top: 4px solid #000;
+}
+
+.cell:nth-child(3),
+.cell:nth-child(6),
+.cell:nth-child(9) {
+    border-right: 4px solid #000;
+}
+
+.cell:nth-child(1),
+.cell:nth-child(4),
+.cell:nth-child(7) {
+    border-left: 4px solid #000;
+}
+
+.cell:nth-child(7),
+.cell:nth-child(8),
+.cell:nth-child(9) {
+    border-bottom: 4px solid #000;
+}
+
+.score {
+    margin: 10px auto 20px auto;
+    width: 270px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-restart {
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-restart:hover {
+    transition: .5;
+    background-color: #8f8e8e;
+    color: #000;
+}
+
+.status {
+    font-size: 20px;
+    margin: 10px 0;
+}
